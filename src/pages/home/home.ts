@@ -11,12 +11,10 @@ import { MainPage } from '../main/main';
 })
 export class HomePage {
   @ViewChild(Slides) slides: Slides;
-  skipMsg: string = "Skip";
-  state: string = 'x';
+  skipMsg: string = "Browse";
 
-  constructor(public navCtrl: NavController) {
 
-  }
+  constructor(public navCtrl: NavController) { }
   skip(){
     this.navCtrl.push(MainPage);
   }
