@@ -2,7 +2,7 @@ import { Component,ViewChild,trigger, transition, style, state, animate, keyfram
 import { NavController,Slides } from 'ionic-angular';
 import { MainPage } from '../main/main';
 import {SignPage} from '../sign/sign';
-
+import { LoadingController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -15,10 +15,17 @@ export class HomePage {
   signIn: string = "Sign In";
 
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController) { }
   skip(){
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    loader.present(MainPage);
     this.navCtrl.push(MainPage);
   }
+
+
   slideChanged(){
     if(this.slides.isEnd()){
       this.skipMsg = "Alright, I Got It";
