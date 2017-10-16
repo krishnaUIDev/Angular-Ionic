@@ -9,7 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { MainPage } from '../pages/main/main';
 import {SignPage} from '../pages/sign/sign';
 import {EmailPage} from '../pages/email/email';
-
+import {AccountPage} from '../pages/account/account'
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import {EmailPage} from '../pages/email/email';
     HomePage,
     MainPage,
     SignPage,
-    EmailPage
+    EmailPage,
+    AccountPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,8 @@ import {EmailPage} from '../pages/email/email';
     HomePage,
     MainPage,
     SignPage,
-    EmailPage
+    EmailPage,
+    AccountPage
   ],
   providers: [
     StatusBar,
