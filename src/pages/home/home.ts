@@ -1,7 +1,7 @@
 import { Component,ViewChild,trigger, transition, style, state, animate, keyframes} from '@angular/core';
 import { NavController,Slides } from 'ionic-angular';
 import { MainPage } from '../main/main';
-
+import {SignPage} from '../sign/sign';
 
 
 @Component({
@@ -12,6 +12,7 @@ import { MainPage } from '../main/main';
 export class HomePage {
   @ViewChild(Slides) slides: Slides;
   skipMsg: string = "Browse";
+  signIn: string = "Sign In";
 
 
   constructor(public navCtrl: NavController) { }
@@ -22,6 +23,9 @@ export class HomePage {
     if(this.slides.isEnd()){
       this.skipMsg = "Alright, I Got It";
     }
+  }
+  sign(){
+    this.navCtrl.push(SignPage);
   }
 
 }

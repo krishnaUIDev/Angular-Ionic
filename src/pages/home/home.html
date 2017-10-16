@@ -44,7 +44,7 @@
         <p>Approchable expert-instructors,vetted by 1200 studens</p>
       </div>
     </ion-slide>
-    
+
     <ion-slide>
       <div class="diag" style="background: url('assets/img/white.svg') no-repeat">
         <ion-icon ios="ios-bug-outline" md="ios-bug" color="danger"></ion-icon>
@@ -65,7 +65,7 @@
             <button ion-button color="secondary" small  (click)="skip()">{{ skipMsg }}</button>
           </ion-col>
           <ion-col col-6>
-            <button ion-button color="secondary" small style="float: right;">Sign in</button>
+            <button ion-button color="secondary" small style="float: right;" (click)="sign()">{{signIn}}</button>
           </ion-col>
         </ion-row>
       </ion-grid>
