@@ -32,7 +32,13 @@ export class HomePage {
     }
   }
   sign(){
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    loader.present(SignPage);
     this.navCtrl.push(SignPage);
+
   }
 
 }
