@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 import {EmailPage} from '../email/email';
-import {AccountPage} from '../account/account'
+import {AccountPage} from '../account/account';
+
 @IonicPage()
 @Component({
   selector: 'page-sign',
@@ -29,8 +30,8 @@ export class SignPage {
       content: "Please wait...",
       duration: 2000
     });
-    loader.present();
-    
+    loader.present(AccountPage);
+    this.navCtrl.push(AccountPage);
   }
 
 }
