@@ -3,6 +3,7 @@ import { NavController,Slides } from 'ionic-angular';
 import { MainPage } from '../main/main';
 import {SignPage} from '../sign/sign';
 import { LoadingController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -15,7 +16,8 @@ export class HomePage {
   signIn: string = "Sign In";
 
 
-  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController) { }
+
+  constructor(public navCtrl: NavController,public loadingCtrl: LoadingController,public alerCtrl: AlertController) { }
   skip(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
@@ -40,5 +42,14 @@ export class HomePage {
     this.navCtrl.push(SignPage);
 
   }
+/*alert*/
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      message: 'Do you want to Buy!',
+      buttons: ['Order']
+    });
+    alert.present()
+  }
+
 
 }

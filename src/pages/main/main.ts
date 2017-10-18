@@ -9,14 +9,24 @@ import {DetailsPage} from '../details/details';
   templateUrl: 'main.html',
 })
 export class MainPage {
-
+  items;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+    this.initializeItems();
   }
 
   /*ionViewDidLoad() {
     console.log('ionViewDidLoad MainPage');
   }*/
+
+  initializeItems() {
+    this.items = [
+      { title: 'AngularJS', img: 'AngularJS.svg'},
+      { title: 'ReactJS', img: 'react.png'},
+      { title: 'JavaScript', img: 'JavaScript.png'},
+      { title: 'CSS3', img: 'css.png'}
+    ];
+  }
+
 
 }
 

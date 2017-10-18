@@ -11,7 +11,8 @@
             <ion-item>
               <ion-row>
                 <ion-col col-6><ion-icon ios="ios-star" md="md-star" class="star"></ion-icon>(1467)</ion-col>
-                <ion-col col-6><button ion-button color="secondary" small style="float: right;">$10</button></ion-col>
+                <ion-col col-6><button ion-button color="secondary" small style="float: right;"
+                                       (click)="doAlert()">$10</button></ion-col>
               </ion-row>
             </ion-item>
           </ion-card>
@@ -19,6 +20,7 @@
       <div>
         <h2>Welcome</h2>
         <p>Enjoy your favorite Coding and channels with the official KTube App</p>
+
       </div>
     </ion-slide>
     <ion-slide>
@@ -45,10 +47,12 @@
       </div>
     </ion-slide>
 
+
     <ion-slide>
       <div class="diag" style="background: url('assets/img/white.svg') no-repeat">
         <ion-icon ios="ios-bug-outline" md="ios-bug" color="danger"></ion-icon>
       </div>
+
       <div>
         <h2>Go at Your Own Pace</h2>
         <p>Lifetime access to courses, watch them anytime,anywhere</p>

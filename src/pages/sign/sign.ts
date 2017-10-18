@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 import {EmailPage} from '../email/email';
 import {AccountPage} from '../account/account';
+import { AlertController } from 'ionic-angular';
+
 
 @IonicPage()
 @Component({
@@ -11,7 +13,8 @@ import {AccountPage} from '../account/account';
 })
 export class SignPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController,
+              public alerCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -32,6 +35,28 @@ export class SignPage {
     });
     loader.present(AccountPage);
     this.navCtrl.push(AccountPage);
+  }
+
+  doConfirm() {
+    let confirm = this.alerCtrl.create({
+      title: 'Use this lightsaber?',
+      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+      buttons: [
+        {
+          text: 'Disagree',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present()
   }
 
 }
