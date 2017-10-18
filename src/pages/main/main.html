@@ -13,11 +13,14 @@
 <!--json Added-->
 
 <ion-content class="card-background-page" >
-
+  <button ion-button outline  (click)="moveTo()" >More Languages</button>
   <ion-card *ngFor="let item of items">
     <img src="assets/img/{{item.img}}"/>
     <div class="card-title">{{item.title}}</div>
     <button ion-button color="secondary">Read more</button>
+    <button ion-button color="danger" clear icon-only>
+      <ion-icon name='trash' is-active="false"></ion-icon>
+    </button>
   </ion-card>
 </ion-content>
 

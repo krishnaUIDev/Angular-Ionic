@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {DetailsPage} from '../details/details';
-
+import {MorePage} from '../more/more';
+import { LoadingController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -10,7 +11,8 @@ import {DetailsPage} from '../details/details';
 })
 export class MainPage {
   items;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              public loadingCtrl: LoadingController) {
     this.initializeItems();
   }
 
@@ -26,7 +28,14 @@ export class MainPage {
       { title: 'CSS3', img: 'css.png'}
     ];
   }
-
+  moveTo(){
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 2000
+    });
+    loader.present(MorePage);
+    this.navCtrl.push(MorePage);
+  }
 
 }
 

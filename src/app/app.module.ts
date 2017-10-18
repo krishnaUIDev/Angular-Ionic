@@ -11,6 +11,7 @@ import {SignPage} from '../pages/sign/sign';
 import {EmailPage} from '../pages/email/email';
 import {AccountPage} from '../pages/account/account';
 import {MenuPage} from '../pages/menu/menu';
+import {MorePage} from '../pages/more/more';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MenuPage} from '../pages/menu/menu';
     SignPage,
     EmailPage,
     AccountPage,
-    MenuPage
+    MenuPage,
+    MorePage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {MenuPage} from '../pages/menu/menu';
     SignPage,
     EmailPage,
     AccountPage,
-    MenuPage
+    MenuPage,
+    MorePage
   ],
   providers: [
     StatusBar,
