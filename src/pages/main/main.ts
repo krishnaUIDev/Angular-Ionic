@@ -31,7 +31,7 @@ export class MainPage {
   moveTo(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
-      duration: 2000
+      duration: 1000
     });
     loader.present(MorePage);
     this.navCtrl.push(MorePage);
