@@ -2,13 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 import {SignPage} from '../sign/sign';
-/**
- * Generated class for the AccountPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { AlertController } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-account',
@@ -16,7 +10,8 @@ import {SignPage} from '../sign/sign';
 })
 export class AccountPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController,
+              public alerCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -29,5 +24,27 @@ export class AccountPage {
     });
     loader.present(SignPage);
     this.navCtrl.push(SignPage);
+  }
+
+  doConfirm() {
+    let confirm = this.alerCtrl.create({
+
+      message: 'Do you agree to Create an account?',
+      buttons: [
+        {
+          text: 'Disagree',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present()
   }
 }

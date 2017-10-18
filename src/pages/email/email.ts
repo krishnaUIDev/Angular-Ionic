@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
-/**
- * Generated class for the EmailPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AlertController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,7 +10,8 @@ import { LoadingController } from 'ionic-angular';
 })
 export class EmailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public loadingCtrl: LoadingController,
+              public alerCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
@@ -24,9 +20,32 @@ export class EmailPage {
   signInn(){
     let loader = this.loadingCtrl.create({
       content: "Please wait...",
-      duration: 2000
+      duration: 1000
     });
     loader.present();
 
   }
+
+  doConfirm($index) {
+    let confirm = this.alerCtrl.create({
+
+      message: 'Do you agree to Login your account?',
+      buttons: [
+        {
+          text: 'Disagree',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Agree',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present()
+  }
+
 }
