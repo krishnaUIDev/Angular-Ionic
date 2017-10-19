@@ -12,7 +12,7 @@ import {EmailPage} from '../pages/email/email';
 import {AccountPage} from '../pages/account/account';
 import {MenuPage} from '../pages/menu/menu';
 import {MorePage} from '../pages/more/more';
-
+import {SettingsPage} from '../pages/settings/settings';
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +22,8 @@ import {MorePage} from '../pages/more/more';
     EmailPage,
     AccountPage,
     MenuPage,
-    MorePage
+    MorePage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,8 @@ import {MorePage} from '../pages/more/more';
     EmailPage,
     AccountPage,
     MenuPage,
-    MorePage
+    MorePage,
+    SettingsPage
   ],
   providers: [
     StatusBar,
