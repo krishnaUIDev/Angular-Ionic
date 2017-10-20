@@ -2,5 +2,7 @@
   "name": "onboarding",
   "app_id": "40299b4b",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
