@@ -1,4 +1,10 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+![Latest Version](https://img.shields.io/github/release/justinwalsh/daux.io.svg?style=flat-square)
+![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)
+![Build Status](https://img.shields.io/travis/onigoetz/daux.io/master.svg?style=flat-square)
+![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/onigoetz/daux.io.svg?style=flat-square)
+![Quality Score](https://img.shields.io/scrutinizer/g/onigoetz/daux.io.svg?style=flat-square)
+
+(https://s1.postimg.org/9twydwufbz/Capture.png)
 
 ## How to use this template
 
@@ -24,3 +30,6 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+```bash
+*Created By Krishna*
+```
