@@ -11,7 +11,7 @@ import { MainPage } from '../pages/main/main';
 import {SignPage} from '../pages/sign/sign';
 import {EmailPage} from '../pages/email/email';
 import {AccountPage} from '../pages/account/account';
-import {MenuPage} from '../pages/menu/menu';
+
 import {MorePage} from '../pages/more/more';
 import {SettingsPage} from '../pages/settings/settings';
 @NgModule({
@@ -22,7 +22,7 @@ import {SettingsPage} from '../pages/settings/settings';
     SignPage,
     EmailPage,
     AccountPage,
-    MenuPage,
+
     MorePage,
     SettingsPage
   ],
@@ -39,7 +39,7 @@ import {SettingsPage} from '../pages/settings/settings';
     SignPage,
     EmailPage,
     AccountPage,
-    MenuPage,
+
     MorePage,
     SettingsPage
   ],

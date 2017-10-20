@@ -51,7 +51,9 @@ export class MainPage {
           role: 'destructive',
           icon: !this.platform.is('ios') ? 'trash' : null,
           handler: () => {
-            console.log('Delete clicked');
+            this.items = [ { title: 'ReactJS', img: 'react.png'},
+              { title: 'JavaScript', img: 'JavaScript.png'},
+              { title: 'CSS3', img: 'css.png'}];
           }
         },
         {

@@ -4,7 +4,7 @@ import { MainPage } from '../main/main';
 import {SignPage} from '../sign/sign';
 import { LoadingController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import {MenuPage} from '../menu/menu';
+
 
 @Component({
   selector: 'page-home',
@@ -43,9 +43,7 @@ export class HomePage {
     this.navCtrl.push(SignPage);
 
   }
-  fuckDo(){
-    this.navCtrl.push(MenuPage);
-  }
+
 
 
 /*alert*/
