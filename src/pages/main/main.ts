@@ -6,7 +6,6 @@ import { LoadingController } from 'ionic-angular';
 import { Platform, ActionSheetController } from 'ionic-angular';
 import {SettingsPage} from '../settings/settings';
 
-
 @IonicPage()
 @Component({
   selector: 'page-main',

@@ -14,7 +14,6 @@ export class MorePage {
   back;
   progg;
 
-
   constructor(public navCtrl: NavController, public navParams: NavParams,platform: Platform) {
     this.isAndroid = platform.is('android');
     this.initializeItems();

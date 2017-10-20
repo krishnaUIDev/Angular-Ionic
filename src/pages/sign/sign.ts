@@ -4,8 +4,6 @@ import { LoadingController } from 'ionic-angular';
 import {EmailPage} from '../email/email';
 import {AccountPage} from '../account/account';
 
-
-
 @IonicPage()
 @Component({
   selector: 'page-sign',
@@ -35,7 +33,4 @@ export class SignPage {
     loader.present(AccountPage);
     this.navCtrl.push(AccountPage);
   }
-
-
-
 }

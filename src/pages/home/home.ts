@@ -16,8 +16,6 @@ export class HomePage {
   skipMsg: string = "Browse";
   signIn: string = "Sign In";
 
-
-
   constructor(public navCtrl: NavController,public loadingCtrl: LoadingController,public alerCtrl: AlertController) { }
   skip(){
     let loader = this.loadingCtrl.create({
@@ -27,7 +25,6 @@ export class HomePage {
     loader.present(MainPage);
     this.navCtrl.push(MainPage);
   }
-
 
   slideChanged(){
     if(this.slides.isEnd()){
@@ -44,8 +41,6 @@ export class HomePage {
 
   }
 
-
-
 /*alert*/
   doAlert() {
     let alert = this.alerCtrl.create({
@@ -54,6 +49,4 @@ export class HomePage {
     });
     alert.present()
   }
-
-
 }

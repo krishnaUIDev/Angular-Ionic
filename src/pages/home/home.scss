@@ -74,5 +74,19 @@ p {
   background: #FF0000;
 }
 
-
+.enjoy-css {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  font: normal normal bold 70px/1 Georgia, serif;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 4px 0 7px rgba(0,255,33,0.91) ;
+  -webkit-transition: all 200ms cubic-bezier(0.945, -0.08, 0.58, 1) 10ms;
+  -moz-transition: all 200ms cubic-bezier(0.945, -0.08, 0.58, 1) 10ms;
+  -o-transition: all 200ms cubic-bezier(0.945, -0.08, 0.58, 1) 10ms;
+  transition: all 200ms cubic-bezier(0.945, -0.08, 0.58, 1) 10ms;
+}
 
