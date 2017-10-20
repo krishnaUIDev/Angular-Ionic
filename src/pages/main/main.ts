@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {DetailsPage} from '../details/details';
+
 import {MorePage} from '../more/more';
 import { LoadingController } from 'ionic-angular';
 import { Platform, ActionSheetController } from 'ionic-angular';
