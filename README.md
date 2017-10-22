@@ -4,7 +4,7 @@
 ![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/onigoetz/daux.io.svg?style=flat-square)
 ![Quality Score](https://img.shields.io/scrutinizer/g/onigoetz/daux.io.svg?style=flat-square)
 
-(https://s1.postimg.org/9twydwufbz/Capture.png)
+![](https://s1.postimg.org/9twydwufbz/Capture.png)
 
 ## How to use this template
 
