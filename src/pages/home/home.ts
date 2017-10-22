@@ -19,8 +19,8 @@ export class HomePage {
   constructor(public navCtrl: NavController,public loadingCtrl: LoadingController,public alerCtrl: AlertController) { }
   skip(){
     let loader = this.loadingCtrl.create({
-      content: "Please wait...",
-      duration: 2000
+        content: "Please wait...",
+        duration: 2000
     });
     loader.present(MainPage);
     this.navCtrl.push(MainPage);
